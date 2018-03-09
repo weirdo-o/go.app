@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>一家民宿</title>
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/swiper.min.js"></script>
+</head>
+<style>
+/*banner*/
+    .swiper-container.banner .swiper-pagination.circle{
+        width: 2rem;
+        height: 0.3rem;
+        /*background: pink;*/
+        position: absolute;
+        top:30%;
+        left:8rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .swiper-pagination.circle .swiper-pagination-bullet{
+        width: 0.2rem;
+        height: 0.2rem;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.7);
+        opacity:1;
+    }
+    .swiper-pagination.circle .swiper-pagination-bullet-active{
+        width: 0.4rem;
+        height: 0.2rem;
+        border-radius: 30%;
+        background: #fff;
+    }
+
+
+</style>
+<script>
+    window.onload=function () {
+        var swiper = new Swiper('.swiper-container.banner', {
+//            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination.circle',
+                clickable: true,
+            }
+        });
+        var swiper1 = new Swiper('.swiper-container.city-li', {
+            slidesPerView: 3.5,
+            spaceBetween: 48,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true
+        });
+        var swiper2 = new Swiper('.swiper-container.house-li', {
+            slidesPerView: 1.1,
+            spaceBetween: 25,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true
+        });
+
+    }
+
+</script>
+<body>
+    <section class="swiper-container banner">
+        <ul class="swiper-wrapper bannertu">
+            <li class="swiper-slide bannertu-list">
+                <a href="">
+                    <img src="img/a1.jpg" alt="">
+                </a>
+            </li>
+            <li class="swiper-slide bannertu-list">
+                <a href="">
+                    <img src="img/a2.jpg" alt="">
+                </a>
+            </li>
+            <li class="swiper-slide bannertu-list">
+                <a href="">
+                    <img src="img/a3.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+        <ul class="swiper-pagination circle">
+            <!--<li class="yuandian active"></li>-->
+            <!--<li class="yuandian"></li>-->
+            <!--<li class="yuandian"></li>-->
+        </ul>
+    </section>
+    <div class="sousuo">
+        <div class="sousuo-list">
+            <i class="iconfont icon1">&#xe60f;</i>
+            <div class="sousuo-wenzi">想去的目的地</div>
+        </div>
+        <div class="sousuo-list">
+            <i class="iconfont icon1">&#xe6b0;</i>
+            <div class="sousuo-wenzi">入住-退房日期</div>
+        </div>
+        <div class="sousuo-list">
+            <i class="iconfont icon1">&#xe658;</i>
+            <div class="sousuo-wenzi">入住人数</div>
+        </div>
+        <div class="sousuo-btn">搜索</div>
+    </div>
+    <div class="neirong">
+        <section class="city">
+        <div class="swiper-container city-li">
+            <div class="city-title">天涯若比邻</div>
+            <ul class="swiper-wrapper city-content">
+                <li class="swiper-slide city-list">
+                    <div class="city-pic">
+                        <img src="img/c1%20(1).png" alt="">
+                    </div>
+                    <div class="city-name">东京</div>
+                </li>
+                <li class="swiper-slide city-list">
+                    <div class="city-pic">
+                        <img src="img/c1%20(2).png" alt="">
+                    </div>
+                    <div class="city-name">东京</div>
+                </li>
+                <li class="swiper-slide city-list">
+                    <div class="city-pic">
+                        <img src="img/c1%20(3).png" alt="">
+                    </div>
+                    <div class="city-name">东京</div>
+                </li>
+                <li class="swiper-slide city-list">
+                    <div class="city-pic">
+                        <img src="img/c1%20(4).png" alt="">
+                    </div>
+                    <div class="city-name">东京</div>
+                </li>
+                <li class="swiper-slide city-list">
+                    <div class="city-pic">
+                        <img src="img/c1%20(2).png" alt="">
+                    </div>
+                    <div class="city-name">东京</div>
+                </li>
+                <li class="swiper-slide city-list">
+                    <div class="city-pic">
+                        <img src="img/c1%20(3).png" alt="">
+                    </div>
+                    <div class="city-name">东京</div>
+                </li>
+            </ul>
+        </div>
+        <div class="swiper-container city-li">
+            <div class="city-title">天涯若比邻</div>
+            <ul class="swiper-wrapper city-content">
+                <li class="swiper-slide city-list">
+                    <div class="city-pic">
+                        <img src="img/c1%20(6).png" alt="">
+                    </div>
+                    <div class="city-name">东京</div>
+                </li>
+                <li class="swiper-slide city-list">
+                    <div class="city-pic">
+                        <img src="img/c1%20(5).png" alt="">
+                    </div>
+                    <div class="city-name">东京</div>
+                </li>
+                <li class="swiper-slide city-list">
+                    <div class="city-pic">
+                        <img src="img/c1%20(4).png" alt="">
+                    </div>
+                    <div class="city-name">东京</div>
+                </li>
+                <li class="swiper-slide city-list">
+                    <div class="city-pic">
+                        <img src="img/c1%20(3).png" alt="">
+                    </div>
+                    <div class="city-name">东京</div>
+                </li>
+                <li class="swiper-slide city-list">
+                    <div class="city-pic">
+                        <img src="img/c1%20(5).png" alt="">
+                    </div>
+                    <div class="city-name">东京</div>
+                </li>
+                <li class="swiper-slide city-list">
+                    <div class="city-pic">
+                        <img src="img/c1%20(4).png" alt="">
+                    </div>
+                    <div class="city-name">东京</div>
+                </li>
+            </ul>
+        </div>
+        <div class="swiper-container house-li">
+            <div class="house-top">
+                <div class="house-title">京都市</div>
+                <div class="house-right">
+                    <a href="more.html">
+                        <div class="house-more">更多</div>
+                        <i class="iconfont iconyou">&#xe601;</i>
+                    </a>
+                </div>
+            </div>
+            <ul class="swiper-wrapper house-content">
+                <li class="swiper-slide house-list">
+                    <div class="house-pic">
+                        <img src="img/h1.jpg" alt="">
+                    </div>
+                    <div class="house-wenzi">
+                        <div class="house-name">流云莊•本馆</div>
+                        <div class="house-jieshao">
+                            <div class="house-jiage">￥1894</div>
+                            <div class="house-guige">整套-8张床-可住8人</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide house-list">
+                    <div class="house-pic">
+                        <img src="img/h2.jpg" alt="">
+                    </div>
+                    <div class="house-wenzi">
+                        <div class="house-name">流云莊•本馆</div>
+                        <div class="house-jieshao">
+                            <div class="house-jiage">￥1894</div>
+                            <div class="house-guige">整套-8张床-可住8人</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide house-list">
+                    <div class="house-pic">
+                        <img src="img/h3.jpg" alt="">
+                    </div>
+                    <div class="house-wenzi">
+                        <div class="house-name">流云莊•本馆</div>
+                        <div class="house-jieshao">
+                            <div class="house-jiage">￥1894</div>
+                            <div class="house-guige">整套-8张床-可住8人</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="swiper-container house-li">
+            <div class="house-top">
+                <div class="house-title">京都市</div>
+                <div class="house-right">
+                    <a href="more.html">
+                        <div class="house-more">更多</div>
+                        <i class="iconfont iconyou">&#xe601;</i>
+                    </a>
+                </div>
+            </div>
+            <ul class="swiper-wrapper house-content">
+                <li class="swiper-slide house-list">
+                    <div class="house-pic">
+                        <img src="img/h2.jpg" alt="">
+                    </div>
+                    <div class="house-wenzi">
+                        <div class="house-name">流云莊•本馆</div>
+                        <div class="house-jieshao">
+                            <div class="house-jiage">￥1894</div>
+                            <div class="house-guige">整套-8张床-可住8人</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide house-list">
+                    <div class="house-pic">
+                        <img src="img/h1.jpg" alt="">
+                    </div>
+                    <div class="house-wenzi">
+                        <div class="house-name">流云莊•本馆</div>
+                        <div class="house-jieshao">
+                            <div class="house-jiage">￥1894</div>
+                            <div class="house-guige">整套-8张床-可住8人</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide house-list">
+                    <div class="house-pic">
+                        <img src="img/h2.jpg" alt="">
+                    </div>
+                    <div class="house-wenzi">
+                        <div class="house-name">流云莊•本馆</div>
+                        <div class="house-jieshao">
+                            <div class="house-jiage">￥1894</div>
+                            <div class="house-guige">整套-8张床-可住8人</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide house-list">
+                    <div class="house-pic">
+                        <img src="img/h3.jpg" alt="">
+                    </div>
+                    <div class="house-wenzi">
+                        <div class="house-name">流云莊•本馆</div>
+                        <div class="house-jieshao">
+                            <div class="house-jiage">￥1894</div>
+                            <div class="house-guige">整套-8张床-可住8人</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="swiper-container house-li">
+            <div class="house-top">
+                <div class="house-title">京都市</div>
+                <div class="house-right">
+                    <a href="more.html">
+                        <div class="house-more">更多</div>
+                        <i class="iconfont iconyou">&#xe601;</i>
+                    </a>
+                </div>
+            </div>
+            <ul class="swiper-wrapper house-content">
+                <li class="swiper-slide house-list">
+                    <div class="house-pic">
+                        <img src="img/h3.jpg" alt="">
+                    </div>
+                    <div class="house-wenzi">
+                        <div class="house-name">流云莊•本馆</div>
+                        <div class="house-jieshao">
+                            <div class="house-jiage">￥1894</div>
+                            <div class="house-guige">整套-8张床-可住8人</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide house-list">
+                    <div class="house-pic">
+                        <img src="img/h1.jpg" alt="">
+                    </div>
+                    <div class="house-wenzi">
+                        <div class="house-name">流云莊•本馆</div>
+                        <div class="house-jieshao">
+                            <div class="house-jiage">￥1894</div>
+                            <div class="house-guige">整套-8张床-可住8人</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide house-list">
+                    <div class="house-pic">
+                        <img src="img/h2.jpg" alt="">
+                    </div>
+                    <div class="house-wenzi">
+                        <div class="house-name">流云莊•本馆</div>
+                        <div class="house-jieshao">
+                            <div class="house-jiage">￥1894</div>
+                            <div class="house-guige">整套-8张床-可住8人</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide house-list">
+                    <div class="house-pic">
+                        <img src="img/h3.jpg" alt="">
+                    </div>
+                    <div class="house-wenzi">
+                        <div class="house-name">流云莊•本馆</div>
+                        <div class="house-jieshao">
+                            <div class="house-jiage">￥1894</div>
+                            <div class="house-guige">整套-8张床-可住8人</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="swiper-container house-li">
+            <div class="house-top">
+                <div class="house-title">京都市</div>
+                <div class="house-right">
+                    <a href="more.html">
+                        <div class="house-more">更多</div>
+                        <i class="iconfont iconyou">&#xe601;</i>
+                    </a>
+                </div>
+            </div>
+            <ul class="swiper-wrapper house-content">
+                <li class="swiper-slide house-list">
+                    <div class="house-pic">
+                        <img src="img/h4.jpg" alt="">
+                    </div>
+                    <div class="house-wenzi">
+                        <div class="house-name">流云莊•本馆</div>
+                        <div class="house-jieshao">
+                            <div class="house-jiage">￥1894</div>
+                            <div class="house-guige">整套-8张床-可住8人</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide house-list">
+                    <div class="house-pic">
+                        <img src="img/h1.jpg" alt="">
+                    </div>
+                    <div class="house-wenzi">
+                        <div class="house-name">流云莊•本馆</div>
+                        <div class="house-jieshao">
+                            <div class="house-jiage">￥1894</div>
+                            <div class="house-guige">整套-8张床-可住8人</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide house-list">
+                    <div class="house-pic">
+                        <img src="img/h2.jpg" alt="">
+                    </div>
+                    <div class="house-wenzi">
+                        <div class="house-name">流云莊•本馆</div>
+                        <div class="house-jieshao">
+                            <div class="house-jiage">￥1894</div>
+                            <div class="house-guige">整套-8张床-可住8人</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide house-list">
+                    <div class="house-pic">
+                        <img src="img/h3.jpg" alt="">
+                    </div>
+                    <div class="house-wenzi">
+                        <div class="house-name">流云莊•本馆</div>
+                        <div class="house-jieshao">
+                            <div class="house-jiage">￥1894</div>
+                            <div class="house-guige">整套-8张床-可住8人</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    </div>
+    <div class="table">
+        <a href="index.html" class="table-li   active">
+            <i class="iconfont icontb">&#xe661;</i>
+            <div class="table-wenzi">发现</div>
+        </a>
+        <a href="shoucang.html" class="table-li">
+            <i class="iconfont icontb">&#xe663;</i>
+            <div class="table-wenzi">收藏</div>
+        </a>
+        <a href="xiaoxi.html" class="table-li">
+            <i class="iconfont icontb">&#xe617;</i>
+            <div class="table-wenzi">消息</div>
+        </a>
+        <a href="mine.html" class="table-li">
+            <i class="iconfont icontb">&#xe606;</i>
+            <div class="table-wenzi">我的</div>
+        </a>
+    </div>
+
+</body>
+</html>

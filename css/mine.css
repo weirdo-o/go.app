@@ -1,0 +1,128 @@
+
+@import url('base.css');
+@font-face {
+    font-family: 'iconfont';  /* project id 573268 */
+    src: url('http://at.alicdn.com/t/font_573268_pwg9wd8sdc1pp66r.eot');
+    src: url('http://at.alicdn.com/t/font_573268_pwg9wd8sdc1pp66r.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_573268_pwg9wd8sdc1pp66r.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_573268_pwg9wd8sdc1pp66r.ttf') format('truetype'),
+    url('http://at.alicdn.com/t/font_573268_pwg9wd8sdc1pp66r.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family: 'iconfont';
+}
+i{
+    font-style: normal;
+}
+header{
+    width: 100%;
+    height: 1.48rem;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    box-shadow:  0.1rem 0.1rem 3rem rgba(0,0,0,0.05);
+}
+.header-li{
+    margin: 0.4rem 0.4rem 0;
+}
+.iconh1{
+    font-size: 0.7rem;
+}
+.touxiang{
+    width: 100%;
+    height: 5.5rem;
+}
+.touxiang-pic,.name,.shenfen{
+    margin:0.3rem auto
+}
+.touxiang-pic{
+    width: 2.32rem;
+    height: 2.32rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.touxiang-pic img{
+    height: 100%;
+}
+.name,.shenfen{
+    width: 2.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shenfen{
+    width: 2rem;
+}
+.name-wenzi{
+    font-size: 0.5rem;
+    color: black;
+}
+.shenfen-wenzi{
+    font-size: 0.14rem;
+    color: #a3a8ab;
+}
+.icont2{
+    font-size: 0.2rem;
+    color: #ee6c6c;
+}
+.liebiao{
+    width: 100%;
+    height: 6.5rem;
+}
+.liebiao-li a{
+    width: 9.9rem;
+    height:1.65rem;
+    margin:0 auto;
+    border-bottom: 0.01rem solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.liebiao-li a{
+    color: black;
+}
+.liebiao-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.liebiao-wenzi,.qiehuan-wenzi{
+    margin-left: 0.5rem;
+}
+.iconli1{
+    font-size: 0.5rem;
+}
+.qiehuan{
+    width: 100%;
+    height:2.5rem;
+    line-height: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+.table{
+    width: 100%;
+    height: 1.6rem;
+    background: #fff;
+    border-top: 0.01rem solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.table-li{
+    text-align: center;
+}
+.active .icontb,.active .table-wenzi{
+    color: #fb6360;
+}
+.icontb{
+    font-size: 0.6rem;
+    color: #837c7a;
+}
+.table-wenzi{
+    margin-top: 0.2rem;
+    font-size: 0.3rem;
+    color: #837c7a;
+}

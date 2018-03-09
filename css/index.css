@@ -1,0 +1,233 @@
+@import url('base.css');
+@font-face {
+    font-family: 'iconfont';  /* project id 573268 */
+    src: url('http://at.alicdn.com/t/font_573268_pwg9wd8sdc1pp66r.eot');
+    src: url('http://at.alicdn.com/t/font_573268_pwg9wd8sdc1pp66r.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_573268_pwg9wd8sdc1pp66r.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_573268_pwg9wd8sdc1pp66r.ttf') format('truetype'),
+    url('http://at.alicdn.com/t/font_573268_pwg9wd8sdc1pp66r.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family: 'iconfont';
+}
+i{
+    font-style: normal;
+}
+.neirong{
+    width: 100%;
+    overflow: hidden;
+}
+/*.banner{*/
+    /*width: 100%;*/
+    /*height: 6rem;*/
+     /*!*background: yellow;*!*/
+    /*position: relative;*/
+/*}*/
+.bannertu-list{
+    display: block;
+    width: 100%;
+    height: 6rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bannertu-list img{
+    width: 100%;
+    height: 100%;
+}
+/*.circle{*/
+    /*width: 2rem;*/
+    /*height: 0.3rem;*/
+     /*!*background: pink;*!*/
+    /*position: absolute;*/
+    /*top:60%;*/
+    /*right: 0.9rem;*/
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    /*align-items: center;*/
+/*}*/
+/*.yuandian{*/
+    /*width: 0.2rem;*/
+    /*height: 0.2rem;*/
+    /*border-radius: 50%;*/
+    /*background: rgba(255, 255, 255, 0.5)*/
+/*}*/
+/*.yuandian.active{*/
+    /*width: 0.4rem;*/
+    /*height: 0.2rem;*/
+    /*border-radius: 30%;*/
+    /*background: #fff;*/
+/*}*/
+.sousuo{
+    width: 9.64rem;
+    height: 5.66rem;
+    background: #fff;
+    position: absolute;
+    top:3rem;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    border-radius: 0.2rem;
+    padding-top: 0.3rem;
+    box-shadow: 0 0.1rem 0.5rem 0.05rem rgba(0,0,0,0.3);
+    z-index:100;
+}
+.sousuo-list{
+    width: 8.5rem;
+    height: 1.15rem;
+    margin: 0 auto;
+    border-bottom: 0.01rem solid #ccc;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.icon1{
+    margin: 0 0.5rem 0 0.2rem;
+}
+.sousuo-btn{
+    width: 8.4rem;
+    height: 1.2rem;
+    background: #ff6764;
+    border-radius: 0.5rem;
+    margin: 0.4rem auto;
+    text-align: center;
+    line-height:1.2rem ;
+    color: #fff;
+}
+.city{
+    width: 9.9rem;
+    /*background: yellow;*/
+    margin: 1.7rem auto 1.6rem;
+}
+.city-title{
+    width: 100%;
+    height:1.9rem;
+    font-size: 0.7rem;
+    line-height: 1.9rem;
+}
+.city-li{
+    width: 100%;
+    height: 7rem;
+    border-bottom: 0.01rem solid #ccc;
+}
+.city-content{
+    width: 100%;
+    height: 5.2rem;
+    display: flex;
+    border-bottom: 0.01rem solid #ccc;
+}
+.city-list{
+    width: 3rem;
+    height: 100%;
+    margin-right: 0.4rem;
+}
+.city-pic{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 0.1rem;
+    overflow: hidden;
+}
+.city-pic img{
+    width: 100%;
+}
+.city-name{
+    font-size: 0.55rem;
+    margin-top: 0.3rem;
+}
+.house-li{
+    width: 9.9rem;
+    height: 10.9rem;
+    /*background: yellow;*/
+    border-bottom: 0.01rem solid #ccc;
+}
+.house-top{
+    width: 100%;
+    height:1.9rem;
+    line-height: 1.9rem;
+    display: flex;
+    justify-content: space-between;
+}
+.house-content{
+    width: 100%;
+    height: 9rem;
+    display: flex;
+}
+.house-list{
+    width: 9.62rem;
+    height: 100%;
+    margin-right: 0.4rem;
+}
+.house-title{
+    font-size: 0.7rem;
+}
+.house-right a{
+    color: black;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.iconyou{
+    margin-left:0.3rem;
+    font-size: 0.5rem;
+    line-height: 2rem;
+}
+.house-more{
+    font-size: 0.45rem;
+    line-height: 1.9rem;
+}
+.house-pic{
+    width: 9.2rem;
+    height: 6.3rem;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+.house-pic img{
+    width: 100%;
+}
+.house-wenzi,.house-jieshao{
+    margin-top: 0.2rem;
+}
+.house-name{
+    margin-top: 0.4rem;
+}
+.house-jieshao{
+    display: flex;
+}
+.house-jiage{
+    font-size: 0.14rem;
+}
+.house-guige{
+    margin-left: 0.5rem;
+    font-size: 0.18rem;
+    color: #666666;
+}
+
+.table{
+    width: 100%;
+    height: 1.6rem;
+    background: #fff;
+    border-top: 0.01rem solid #ccc;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+}
+.table-li{
+    text-align: center;
+}
+.active .icontb,.active .table-wenzi{
+    color: #fb6360;
+}
+.icontb{
+    font-size: 0.6rem;
+    color: #837c7a;
+}
+.table-wenzi{
+    margin-top: 0.2rem;
+    font-size: 0.3rem;
+    color: #837c7a;
+}
